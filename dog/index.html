@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Dog My Life</title>
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0d0d0f;
+    color: #f2f2f2;
+  }
+  header {
+    text-align: center;
+    padding: 4rem 1.5rem 2.5rem;
+  }
+  h1 { font-size: 2.2rem; margin: 0 0 0.5rem; letter-spacing: 0.02em; }
+  header p { color: #9a9aa2; margin: 0; font-size: 1.05rem; }
+  .hall {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  figure {
+    margin: 0;
+    background: #17171a;
+    border: 1px solid #26262b;
+    border-radius: 6px;
+    padding: 0.9rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  }
+  figure.wide { grid-column: 1 / -1; }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+  figcaption {
+    color: #9a9aa2;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 0.75rem;
+  }
+  .back {
+    display: block;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .back a { color: #9a9aa2; text-decoration: none; font-size: 0.95rem; }
+  .back a:hover { color: #f2f2f2; }
+  @media (max-width: 640px) {
+    .hall { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>My Dog My Life</h1>
+  <p>Sumo, in his natural habitats.</p>
+</header>
+<div class="hall">
+  <figure>
+    <img src="car-ride.jpg" alt="Sumo as a puppy in a green puffer vest, sitting on a blanket in the car">
+    <figcaption>First road trips, best co-pilot.</figcaption>
+  </figure>
+  <figure>
+    <img src="couch.jpg" alt="Sumo sitting upright on a blanket-covered couch, giving a sideways look">
+    <figcaption>The couch is his now.</figcaption>
+  </figure>
+  <figure class="wide">
+    <img src="nap.jpg" alt="Sumo fast asleep, sprawled out on a fuzzy blanket">
+    <figcaption>Professional napper.</figcaption>
+  </figure>
+</div>
+<nav class="back"><a href="/">&larr; back</a></nav>
+</body>
+</html>
